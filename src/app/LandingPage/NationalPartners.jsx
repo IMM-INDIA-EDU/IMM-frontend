@@ -1,6 +1,6 @@
+
 /* eslint-disable react/prop-types */
 
-// import img from "next/img"
 import { motion, useInView } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -14,27 +14,43 @@ export default function NationalPartners({ partners }) {
   const titleRef = useRef(null);
   const cardsRef = useRef(null);
 
-  const isTitleInView = useInView(titleRef, { once: true, amount: 0.5 });
-  const areCardsInView = useInView(cardsRef, { once: true, amount: 0.1 });
+  const isTitleInView = useInView(titleRef, {
+    once: true,
+    amount: 0.5,
+  });
+
+  const areCardsInView = useInView(cardsRef, {
+    once: true,
+    amount: 0.1,
+  });
 
   return (
-    <section ref={sectionRef}>
+    <section
+      ref={sectionRef}
+      className="w-full flex flex-col items-center"
+    >
+      {/* Section Heading */}
       <motion.div
         ref={titleRef}
-        className="mb-8"
+        className="mb-8 w-full  flex flex-col"
         initial={{ opacity: 0, x: -40 }}
-        animate={{ opacity: isTitleInView ? 1 : 0, x: isTitleInView ? 0 : -40 }}
+        animate={{
+          opacity: isTitleInView ? 1 : 0,
+          x: isTitleInView ? 0 : -40,
+        }}
         transition={{ duration: 0.5, delay: 0.1 }}
       >
         <h2 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
           National Partners
         </h2>
-        <div className="w-20 h-1 mt-2 bg-white/80"></div>
+
+        <div className="w-20 h-1 mt-2 bg-white/80 rounded-full"></div>
       </motion.div>
 
+      {/* Centered Partner Cards */}
       <div
         ref={cardsRef}
-        className="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-5"
+        className="w-full items-center flex flex-wrap justify-center items-stretch gap-6"
       >
         {partners.map((partner, index) => (
           <motion.div
@@ -47,15 +63,16 @@ export default function NationalPartners({ partners }) {
             }}
             transition={{
               duration: 0.7,
-              delay: 0.5 + index * 0.5,
+              delay: 0.5 + index * 0.2,
               ease: "easeOut",
             }}
             whileHover={{ y: 0, scale: 1.02 }}
-            className="h-full"
+            className="w-full max-w-[280px] h-full"
           >
             <Card className="h-full overflow-hidden transition-all duration-300 group hover:border-primary/20 hover:shadow-lg dark:hover:border-primary/30 rounded-sm">
               <CardContent className="p-0">
-                <div className="relative flex items-center justify-center w-full p-0 overflow-hidden bg-whit aspect-square dark:bg-slate-700">
+                {/* Partner Logo */}
+                <div className="relative flex items-center justify-center w-full aspect-square overflow-hidden bg-white dark:bg-slate-700">
                   <motion.div
                     className="relative w-full h-full flex items-center justify-center"
                     whileHover={{ scale: 1.1 }}
@@ -74,10 +91,12 @@ export default function NationalPartners({ partners }) {
                       alt={`${partner.name} logo`}
                       width={300}
                       height={300}
-                      className="object-cover w-full h-ful mx-auto "
+                      className="w-full h-full object-contain p-4"
                     />
                   </motion.div>
                 </div>
+
+                {/* Partner Information */}
                 <motion.div
                   className="flex flex-col p-4 bg-white"
                   initial={{ opacity: 0, y: 20 }}
@@ -93,15 +112,17 @@ export default function NationalPartners({ partners }) {
                   <h3 className="mb-2 font-semibold line-clamp-1 hover:line-clamp-none">
                     {partner.name}
                   </h3>
+
                   <Badge
                     variant="outline"
-                    className="mb-2 w-fit bg-primary/10 text-primary dark:bg-primary/20 text-"
+                    className="mb-2 w-fit bg-primary/10 text-primary dark:bg-primary/20"
                   >
                     {partner.category}
                   </Badge>
+
                   <Link href={partner.website}>
                     <span className="w-full mt-auto text-sm group text-primary-color">
-                      Read More{" "}
+                      Read More
                       <ArrowRight className="inline-block w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
                     </span>
                   </Link>

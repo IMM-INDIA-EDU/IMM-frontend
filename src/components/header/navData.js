@@ -15,7 +15,7 @@ export const navlinks = [
     name: "Programs",
     path: "/programs",
     submenu: [
-      { name: "Legacy PGDM", path: "/programs/pgdm" },
+      { name: "Legacy PGDM", path: "/programs/legacypgdm" },
       { name: "BBA", path: "/programs/bba" },
     ],
   },

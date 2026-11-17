@@ -62,7 +62,7 @@ const TopBar = () => {
   const socialIcons = [
     {
       icon: <Instagram className="w-4 h-4" />,
-      url: "https://www.instagram.com/imm_india/",
+      url: "https://www.instagram.com/imm.business.school/",
     },
     {
       icon: <Linkedin className="w-4 h-4" />,

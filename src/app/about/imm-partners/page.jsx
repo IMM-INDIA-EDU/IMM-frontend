@@ -87,56 +87,56 @@ export default function OurPartnersDetail() {
       longDescription:
         "The Government of India has officially designated IIT Ropar as a Centre of Excellence in AI, recognizing it as one of the top four institutes leading India's AI revolution. This landmark initiative, reported by the Economic Times, cements IIT Ropar's position at the forefront of AI and innovation, and IMM students will be direct beneficiaries of this elite status. Spread over a 525-acre campus, it boasts state-of-the-art infrastructure, including advanced research centers, modern laboratories, and extensive digital resources. IIT Ropar is recognized for its interdisciplinary research in fields like renewable energy, artificial intelligence, and bio-imaging. Committed to academic excellence and innovation, the institute has achieved significant national and international recognition.",
     },
-    {
-      id: 2,
-      name: "KLADIO",
-      logo: Kladio,
-      category: "Education",
-      description:
-        "Kladio is an innovative educational platform that emphasizes experiential and global learning.",
-      longDescription:
-        "Their programs, such as the Bachelor's in Entrepreneurship and Family Business Management, offer immersive experiences across multiple countries, providing students with diverse business insights and cultural exposure. Kladio's commitment to mentorship connects learners with global influencers and industry leaders, ensuring guidance from the best minds across various sectors.",
-    },
-    {
-      id: 3,
-      name: "JJF Education Pvt. Ltd.",
-      logo: JIT,
-      category: "Education",
-      description:
-        "JJF Education Private Limited operates in the education sector with a focus on disseminating knowledge.",
-      longDescription:
-        "The company aims to provide a common forum for various education professionals to organize training courses and special programs in both online and offline formats. JJF Education intends to collaborate with Indian and foreign entities to further its objective of educating, enabling, and empowering individuals globally.",
-    },
     // {
-    //   id: 4,
-    //   name: "VITTI Research Foundation",
-    //   logo: Vitti,
-    //   category: "Research",
+    //   id: 2,
+    //   name: "KLADIO",
+    //   logo: Kladio,
+    //   category: "Education",
     //   description:
-    //     "Vitti Research Foundation focuses on fundamental AI research.",
+    //     "Kladio is an innovative educational platform that emphasizes experiential and global learning.",
     //   longDescription:
-    //     "They collaborate with academia, global foundations, industries, and government initiatives to publish papers and generate intellectual property.",
+    //     "Their programs, such as the Bachelor's in Entrepreneurship and Family Business Management, offer immersive experiences across multiple countries, providing students with diverse business insights and cultural exposure. Kladio's commitment to mentorship connects learners with global influencers and industry leaders, ensuring guidance from the best minds across various sectors.",
     // },
-    {
-      id: 5,
-      name: "Young Skilled India",
-      logo: Young,
-      category: "Training",
-      description:
-        "Young Skilled India is a Government of India-certified startup.",
-      longDescription:
-        "The organization offers AI-driven training and certificate courses aimed at enhancing professional and management skills across various demographics. They provide productivity and leadership courses for employees, with programs in public speaking, presentation skills, and management.",
-    },
-    {
-      id: 6,
-      name: "WASME",
-      logo: Wasme,
-      category: "SME Development",
-      description:
-        "The World Association for Small and Medium Enterprises (WASME) is a global organization.",
-      longDescription:
-        "WASME is dedicated to promoting the growth and development of small and medium enterprises (SMEs) worldwide. They foster collaboration among governments, industry bodies, and SMEs through policy advocacy, capacity building, and knowledge sharing. Their initiatives include training programs, international conferences, and awards to recognize SME excellence.",
-    },
+    // {
+    //   id: 3,
+    //   name: "JJF Education Pvt. Ltd.",
+    //   logo: JIT,
+    //   category: "Education",
+    //   description:
+    //     "JJF Education Private Limited operates in the education sector with a focus on disseminating knowledge.",
+    //   longDescription:
+    //     "The company aims to provide a common forum for various education professionals to organize training courses and special programs in both online and offline formats. JJF Education intends to collaborate with Indian and foreign entities to further its objective of educating, enabling, and empowering individuals globally.",
+    // },
+    // // {
+    // //   id: 4,
+    // //   name: "VITTI Research Foundation",
+    // //   logo: Vitti,
+    // //   category: "Research",
+    // //   description:
+    // //     "Vitti Research Foundation focuses on fundamental AI research.",
+    // //   longDescription:
+    // //     "They collaborate with academia, global foundations, industries, and government initiatives to publish papers and generate intellectual property.",
+    // // },
+    // {
+    //   id: 5,
+    //   name: "Young Skilled India",
+    //   logo: Young,
+    //   category: "Training",
+    //   description:
+    //     "Young Skilled India is a Government of India-certified startup.",
+    //   longDescription:
+    //     "The organization offers AI-driven training and certificate courses aimed at enhancing professional and management skills across various demographics. They provide productivity and leadership courses for employees, with programs in public speaking, presentation skills, and management.",
+    // },
+    // {
+    //   id: 6,
+    //   name: "WASME",
+    //   logo: Wasme,
+    //   category: "SME Development",
+    //   description:
+    //     "The World Association for Small and Medium Enterprises (WASME) is a global organization.",
+    //   longDescription:
+    //     "WASME is dedicated to promoting the growth and development of small and medium enterprises (SMEs) worldwide. They foster collaboration among governments, industry bodies, and SMEs through policy advocacy, capacity building, and knowledge sharing. Their initiatives include training programs, international conferences, and awards to recognize SME excellence.",
+    // },
   ];
 
   return (
